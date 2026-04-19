@@ -1,0 +1,381 @@
+/* ── Dashboard Page ── */
+.dashboard-page {
+  min-height: 100vh;
+  background: #f4f6fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+ 
+/* ── Header ── */
+.dashboard-header {
+  background: #1a1a2e;
+  color: white;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+ 
+.dashboard-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+ 
+.dashboard-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.dashboard-logo {
+  font-size: 20px;
+}
+ 
+.dashboard-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+ 
+.btn-back {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 7px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+ 
+.btn-back:hover {
+  background: rgba(255,255,255,0.2);
+}
+ 
+.btn-logout-dash {
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 7px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+ 
+.btn-logout-dash:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+ 
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+ 
+.username-label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+}
+ 
+/* ── Main Content ── */
+.dashboard-content {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+ 
+.dashboard-welcome h2 {
+  margin: 0 0 6px;
+  color: #1a1a2e;
+  font-size: 22px;
+  font-weight: 700;
+}
+ 
+.dashboard-welcome p {
+  margin: 0 0 30px;
+  color: #888;
+  font-size: 14px;
+}
+ 
+/* ── Stat Cards ── */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+ 
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px 22px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+ 
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+ 
+.stat-icon {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+ 
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+ 
+.stat-number.total    { color: #1a1a2e; }
+.stat-number.visited  { color: tomato; }
+.stat-number.wishlist { color: #2980b9; }
+.stat-number.rating   { color: #f59e0b; }
+.stat-number.photos   { color: #8b5cf6; }
+ 
+.stat-label {
+  font-size: 13px;
+  color: #999;
+  margin-top: 2px;
+}
+ 
+/* ── Two Column Grid ── */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+ 
+@media (max-width: 700px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+/* ── Cards ── */
+.dash-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px 24px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+ 
+.dash-card.full-width {
+  grid-column: 1 / -1;
+}
+ 
+.dash-card h3 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  border-bottom: 1.5px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+ 
+/* ── Top Rated ── */
+.top-rated-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+ 
+.top-rated-title {
+  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a2e;
+}
+ 
+.top-rated-desc {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #666;
+}
+ 
+.stars {
+  color: gold;
+  font-size: 15px;
+}
+ 
+.no-data {
+  color: #bbb;
+  font-size: 13px;
+  padding: 10px 0;
+}
+ 
+/* ── Progress Bars ── */
+.progress-section {
+  margin-bottom: 16px;
+}
+ 
+.progress-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+ 
+.progress-row span:first-child {
+  font-size: 13px;
+  color: #555;
+}
+ 
+.progress-row span:last-child {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+ 
+.progress-track {
+  background: #eee;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+ 
+.progress-fill {
+  height: 10px;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+ 
+.progress-fill.visited  { background: tomato; }
+.progress-fill.wishlist { background: #2980b9; }
+.progress-fill.rating   { background: #f59e0b; }
+ 
+/* ── Rating Breakdown ── */
+.rating-breakdown h4 {
+  margin: 18px 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+ 
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+ 
+.rating-row .star-label {
+  font-size: 12px;
+  min-width: 28px;
+  color: #555;
+}
+ 
+.rating-row .rating-count {
+  font-size: 11px;
+  color: #aaa;
+  min-width: 20px;
+  text-align: right;
+}
+ 
+/* ── Recent Activity ── */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 14px;
+  background: #f8f9fb;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: background 0.15s;
+}
+ 
+.activity-item:hover {
+  background: #f0f3fa;
+}
+ 
+.activity-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+ 
+.activity-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+ 
+.activity-icon.visited  { background: #fff0ed; }
+.activity-icon.wishlist { background: #e8f4fd; }
+ 
+.activity-info {
+  flex: 1;
+  min-width: 0;
+}
+ 
+.activity-title {
+  margin: 0 0 3px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+.activity-desc {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+.activity-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+ 
+.activity-stars {
+  font-size: 12px;
+  color: gold;
+}
+ 
+.activity-type {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+ 
+.activity-type.visited  { color: tomato; }
+.activity-type.wishlist { color: #2980b9; }
+ 
