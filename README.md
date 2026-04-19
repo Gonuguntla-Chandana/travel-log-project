@@ -260,9 +260,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 👤 Author
 
-**Bhanu** — Full Stack Developer  
-📧 your-email@gmail.com  
-🐙 [github.com/your-username](https://github.com/your-username)
+**Chandana Gonuguntla** — Full Stack Developer, MERN Stack Developer, Blockchain Developer.  
+📧 gonuguntlachandana093@gmail.com  
+🐙 [github.com/Gonuguntla-Chandana](https://github.com/Gonuguntla-Chandana)
 
 ---
 
