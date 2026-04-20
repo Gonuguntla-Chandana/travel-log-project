@@ -46,7 +46,7 @@ function App() {
       }
     };
     getPins();
-  }, [currentUser]);
+  }, [currentUser, token]);
  
   const handleLogout = () => {
     localStorage.removeItem("travellog_token");
