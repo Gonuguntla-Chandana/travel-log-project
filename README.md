@@ -184,7 +184,7 @@ npm install
 Create a `.env` file inside `client/`:
 ```env
 REACT_APP_MAPTILER_KEY=your_maptiler_key
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=https://travel-log-project.onrender.com
 your-app.netlify.app  →  splendid-cheesecake-f20be3.netlify.app
 your-api.onrender.com →  travel-log-project.onrender.com
 ```
