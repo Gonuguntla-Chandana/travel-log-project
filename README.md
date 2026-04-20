@@ -6,8 +6,8 @@ A full-stack travel journaling application where users can **pin locations on an
 
 ## 🌐 Live Demo
 
-> **Frontend:** [your-app.netlify.app](https://your-app.netlify.app)  
-> **Backend API:** [your-api.onrender.com](https://your-api.onrender.com)
+> **Frontend:** [your-app.netlify.app](https://app.netlify.com/teams/gonuguntla-chandana/projects)  
+> **Backend API:** [your-api.onrender.com](https://dashboard.render.com/)
 
 ---
 
@@ -155,7 +155,7 @@ npm install
 
 Create a `.env` file inside `server/`:
 ```env
-MONGO_URL=your_mongodb_connection_string
+MONGO_URL=your_mongoDB_connectiuon_string
 PORT=5000
 JWT_SECRET=your_secret_key_here
 CLOUDINARY_CLOUD_NAME=your_cloud_name
@@ -185,6 +185,8 @@ Create a `.env` file inside `client/`:
 ```env
 REACT_APP_MAPTILER_KEY=your_maptiler_key
 REACT_APP_API_URL=http://localhost:5000
+your-app.netlify.app  →  splendid-cheesecake-f20be3.netlify.app
+your-api.onrender.com →  travel-log-project.onrender.com
 ```
 
 Start the React app:
